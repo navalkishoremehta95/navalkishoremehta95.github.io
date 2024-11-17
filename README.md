@@ -1,4 +1,3 @@
-# navalkishoremehta.github.io
 # **PhD Scholar**
 
 #### **Technical Skills**: Python, SQL, MATLAB, AWS, Snowflake  
