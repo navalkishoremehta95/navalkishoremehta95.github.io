@@ -11,7 +11,7 @@
   - Percentage: 81.58%  
 
 ---
-
+![EEG Band Discovery](/assets/imgs/5.jpg)
 ## **Work Experience**  
 **Senior Research Fellow @ CSIR-CEERI, Pilani (_Aug 2023 – Present_)**  
 - Developed advanced computer vision-based solutions for industrial safety and efficiency.  
