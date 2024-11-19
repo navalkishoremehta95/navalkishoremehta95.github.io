@@ -105,6 +105,50 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 
 <!-- Project Section -->
 <table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/iar_net.png" width="160" height="140" style="position: absolute;">
+        <img id="gif_image" src="./Files/iar_net.gif" width="160" height="140" style="opacity: 0; position: relative;">
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <papertitle>
+        <a href="https://ieeexplore.ieee.org/document/10517873">IAR-Net: A Human–Object Context Guided Action Recognition Network for Industrial Environment Monitoring</a>
+      </papertitle>
+      <br>
+      Abeer Banerjee, <strong>Naval Kishore Mehta</strong>, Shyam S Prasad, Himanshu Kumar, Sumeet Saurav, Sanjay Singh<br>
+      <em>IEEE Transactions on Instrumentation and Measurement, 2024</em><br>  
+      <a href="https://ieeexplore.ieee.org/document/10517873">Paper</a>
+      <p></p>
+      <p>
+        This project introduces IAR-Net, a novel neural network that integrates human and object context for industrial human activity recognition. Complemented by the specialized LAMIS database  first-of-its-kind dataset featuring 17 industrial action categories. Also, the work introduces Adaptive Frame Sampling (AFS), a novel frame selection technique evaluated against existing methods. AFS-IAR-Net achieves state-of-the-art performance on the HRI30 benchmark and LAMIS database, advancing SOP monitoring and industrial ergonomic analysis.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
   <tr bgcolor="#e6f7ff">
     <!-- Right: GIF/Image -->
     <td style="padding:10px;width:25%;vertical-align:middle">
@@ -142,7 +186,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
       <a href="https://ieeexplore.ieee.org/abstract/document/10650655">Paper</a>
       <p></p>
       <p>
-        This project focuses on overcoming the challenges of gaze vector prediction in extremely low-light environments. By introducing a unique temporal event-encoding approach and designing a tailored neural network, it ensures precise spatial localization and consistent accuracy in gaze direction estimation.
+        This project focuses on overcoming the challenges of gaze vector prediction in extremely low-light environments. By introducing a unique temporal event-encoding approach and designing a tailored neural network, it ensures precise spatial localization and consistent accuracy in gaze vector estimation.
       </p>
     </td>
   </tr>
