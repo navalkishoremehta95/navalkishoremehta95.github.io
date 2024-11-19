@@ -40,7 +40,7 @@ Email: <a href="mailto:naval.ceeri18a@acsir.res.in">naval.ceeri18a@acsir.res.in<
 <a href="https://dblp.org/pid/330/6163.html"> <img border="0" src="./Files/dblp.png" width="30" height="30"> </a> &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/naval-kishore-m-33141378/"> <img border="0" src="./Files/linkedin.png" width="30" height="30"> </a> &nbsp;&nbsp;
 <!-- <a href="https://twitter.com/CaoZehong/"> <img border="0" src="./Files/twitter.png" width="30" height="30"> </a> &nbsp;&nbsp; -->
-<a href="https://github.com/navalkishoremehtaa">  <img border="0" src="./Files/git.png" width="30" height="30"> </a> &nbsp;&nbsp;
+<a href="https://github.com/navalkishoremehta95">  <img border="0" src="./Files/git.png" width="30" height="30"> </a> &nbsp;&nbsp;
 
 </p>
 
@@ -102,35 +102,37 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 <a href="https://www.scimagojr.com/journalrank.php"> JCR Q1</a>), such as
 <i>IEEE TPAMI, TNNLS, TFS, TKDE, TMI, TNSRE, JBHI, AAMAS, AAAI</i> ... </li> </p>
 </ul> -->
-
 <!-- Project Section -->
 <table>
   <tr bgcolor="#f5f5dc">
     <!-- Right: GIF/Image -->
     <td style="padding:10px;width:25%;vertical-align:middle">
       <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
-        <img id="google" src="./Files/iar_net.png" width="160" height="140" style="position: absolute;">
-       <img id="gif_image" src="./Files/iar_net.gif" width="160" height="140" style="display: block;">
-
+        <!-- Static Image -->
+        <img id="static_image" src="./Files/iar_net.png" width="160" height="140" style="position: absolute;">
+        
+        <!-- GIF -->
+        <img id="gif_image" src="./Files/iar_net.gif" width="160" height="140" style="display: block;">
       </div>
-  <script type="text/javascript">
-    window.onload = function () {
-      var gif = document.getElementById('gif_image');
-      var staticImage = document.getElementById('google');
-      
-      // Check if the GIF loads successfully
-      gif.onerror = function () {
-        gif.style.display = 'none';
-        staticImage.style.display = 'block';
-      };
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('static_image');
 
-      gif.onload = function () {
-        gif.style.opacity = '1';
-        staticImage.style.display = 'none';
-      };
-    };
-  </script>
+          // Ensure the GIF is loaded properly
+          gif.onerror = function () {
+            console.log("GIF failed to load.");
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
 
+          gif.onload = function () {
+            console.log("GIF loaded successfully.");
+            gif.style.display = 'block';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
     </td>
 
     <!-- Left: Project Description -->
@@ -149,6 +151,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
     </td>
   </tr>
 </table>
+
 
 <table>
   <tr bgcolor="#e6f7ff">
