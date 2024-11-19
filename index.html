@@ -105,30 +105,33 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 <!-- Project Section -->
 <table>
   <tr bgcolor="#f5f5dc">
-    <!-- Right: GIF/Image -->
+    <!-- Right: Video -->
     <td style="padding:10px;width:25%;vertical-align:middle">
-      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
-        <!-- Static Image -->
+      <div class="video-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <!-- Static Image as Fallback -->
         <img id="static_image" src="./Files/iar_net.png" width="160" height="140" style="position: absolute;">
         
-        <!-- GIF -->
-        <img id="gif_image" src="./Files/iar_net.gif" width="160" height="140" style="display: block;">
+        <!-- MP4 Video -->
+        <video id="mp4_video" width="160" height="140" style="display: block;" autoplay muted loop>
+          <source src="./Files/iar_net.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <script type="text/javascript">
         window.onload = function () {
-          var gif = document.getElementById('gif_image');
+          var video = document.getElementById('mp4_video');
           var staticImage = document.getElementById('static_image');
-
-          // Ensure the GIF is loaded properly
-          gif.onerror = function () {
-            console.log("GIF failed to load.");
-            gif.style.display = 'none';
+          
+          // Check if the video loads successfully
+          video.onerror = function () {
+            console.log("Video failed to load.");
+            video.style.display = 'none';
             staticImage.style.display = 'block';
           };
 
-          gif.onload = function () {
-            console.log("GIF loaded successfully.");
-            gif.style.display = 'block';
+          video.onloadstart = function () {
+            console.log("Video loaded successfully.");
+            video.style.display = 'block';
             staticImage.style.display = 'none';
           };
         };
@@ -146,7 +149,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
       <a href="https://ieeexplore.ieee.org/document/10517873">Paper</a>
       <p></p>
       <p>
-        This project introduces IAR-Net, a novel neural network that integrates human and object context for industrial human activity recognition. It is complemented by the specialized LAMIS database, a first-of-its-kind dataset featuring 17 industrial action categories. Also, the work proposes  Adaptive Frame Sampling (AFS), a novel frame selection technique evaluated against existing methods. AFS-IAR-Net achieves state-of-the-art performance on the HRI30 benchmark and LAMIS database, advancing SOP monitoring and industrial ergonomic analysis.
+        This project introduces IAR-Net, a novel neural network that integrates human and object context for industrial human activity recognition. It is complemented by the specialized LAMIS database, a first-of-its-kind dataset featuring 17 industrial action categories. Also, the work proposes Adaptive Frame Sampling (AFS), a novel frame selection technique evaluated against existing methods. AFS-IAR-Net achieves state-of-the-art performance on the HRI30 benchmark and LAMIS database, advancing SOP monitoring and industrial ergonomic analysis.
       </p>
     </td>
   </tr>
