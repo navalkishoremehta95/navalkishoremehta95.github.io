@@ -29,12 +29,11 @@
 
 <font size="3"> 
 Email: <a href="mailto:naval.ceeri18a@acsir.res.in">naval.ceeri18a@acsir.res.in</a><br />
-<!-- Office: <a href="https://www.google.com/maps/place/W+Building+of+UniSA+Mawson+Lakes/@-34.812697,138.6203737,21z/data=!4m5!3m4!1s0x6ab0b7b240e1d69b:0xc863dd5636de78ae!8m2!3d-34.8126816!4d138.6206536"> W2-10, Mawson Lakes Campus </a> <br /> -->
+ 
 
 <p/>
 <font size="3">
 
-<!-- <a href="https://people.unisa.edu.au/Jimmy.Cao"> <img border="0"  src="./Files/unisa.png" width="30" height="30"> </a> &nbsp;&nbsp; -->
 <a href="https://scholar.google.com/citations?user=iMKNqZMAAAAJ&hl=en"> <img border="0" src="./Files/google.png" width="30" height="30">  </a> &nbsp;&nbsp;
 <a href="https://www.researchgate.net/profile/Naval-Kishore-Mehta-2"> <img border="0" src="./Files/rg.png" width="30" height="30"> </a> &nbsp;&nbsp;
 <a href="https://dblp.org/pid/330/6163.html"> <img border="0" src="./Files/dblp.png" width="30" height="30"> </a> &nbsp;&nbsp;
@@ -237,6 +236,51 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
     <!-- Right: GIF/Image -->
     <td style="padding:10px;width:25%;vertical-align:middle">
       <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/applied_int22.png" width="160" height="140" style="position: absolute;">
+        <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://link.springer.com/article/10.1007/s10489-022-03200-4">Three-dimensional DenseNet self-attention neural network for automatic detection of student’s engagement
+</a>
+      </papertitle>
+      <br>
+      <strong>Naval Kishore Mehta</strong>, Shyam Sunder Prasad, Sumeet Saurav, Ravi Saini, Sanjay Singh<br>
+      <em> Applied Intelligence Journal, Springer,  2022</em><br>  
+      <a href="https://link.springer.com/article/10.1007/s10489-022-03200-4">Paper</a> (Best Paper Award)
+      <p></p>
+      <p>
+        This paper presents DenseAttNet, a self-attention DenseNet model achieving state-of-the-art performance in evaluating student engagement in virtual and traditional learning settings. On the DAiSEE dataset, it records engagement and boredom classification accuracies of 63.59% and 54.27%, respectively, and excels in multi-label tasks with accuracies up to 95.85%. Regression experiments further validate its effectiveness, achieving an MSE of 0.0347 on DAiSEE and 0.0877 on EmotiW-EP, establishing DenseAttNet as a robust solution for analyzing emotional states in e-learning.
+     </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
         <img id="google" src="./Files/spoof_paper.png" width="160" height="140" style="position: absolute;">
         <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
       </div>
@@ -262,20 +306,19 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
     <!-- Left: Project Description -->
     <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
       <papertitle>
-        <a href="https://link.springer.com/chapter/10.1007/978-981-19-7513-4_10">JS-SpoofNet: A Jointly Supervised Parallel Branched Neural Network for Spoof Detection</a>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-19-7513-4_10">A Self-explainable Face Anti-spoofing Solution Based on Depth Estimation
+</a>
       </papertitle>
       <br>
       Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Abeer Banerjee, Sumeet Saurav, Sanjay Singh<br>
       <em> International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA), 2022</em><br>  
-      <a href="https://link.springer.com/chapter/10.1007/978-981-19-7513-4_10">Paper</a>
+      <a href="https://link.springer.com/chapter/10.1007/978-981-19-7513-4_10">Paper</a> (Best Paper Award)
       <p></p>
       <p>
         We propose an explainable AI model that not only classifies spoof and live faces but also explains why they are different using mid-level features. Our proposed end-to-end face anti-spoofing network extracts the depth map and classifies the face input.      </p>
     </td>
   </tr>
 </table>
-
-
 
 <!-- Services -->
 <A NAME="Services"><h2>Services</h2></A>
