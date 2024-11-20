@@ -549,7 +549,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
     <!-- Right: GIF/Image -->
     <td style="padding:10px;width:25%;vertical-align:middle">
       <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
-        <img id="google" src="./Files/fras.png" width="180" height="140" style="position: absolute;">
+        <img id="google" src="./Files/shelps.png" width="180" height="140" style="position: absolute;">
         <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
       </div>
       <script type="text/javascript">
@@ -588,6 +588,94 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
   </tr>
 </table>
 
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: Video -->
+    <td style="padding:10px; width:25%; vertical-align:middle;">
+      <div class="video-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <!-- WebM Video -->
+        <video id="video_demo" width="180" height="140" autoplay muted loop controls>
+          <source src="./Files/rps_demo.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var video = document.getElementById('video_demo');
+
+          // Log video load status
+          video.onerror = function () {
+            console.log("Video failed to load.");
+          };
+
+          video.onloadstart = function () {
+            console.log("Video loading...");
+          };
+        };
+      </script>
+    </td>
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+
+        <a href="https://www.youtube.com/watch?v=4OZy6LUb-ns">Real-Time Rock-Paper-Scissors Using CNN and HSV Camera</a>
+      </papertitle>
+      <br>
+      <strong>Naval Kishore Mehta</strong>, Sohan Dudala, Srikant, Avinash, Sushil Raut, Idaku Ishii <br>
+      Sakura Science Exchange Program Fellow, 2019
+      International Linkage Degree Program Fellowship (Hiroshima University, Japan), 2019
+      <p></p>
+      <p>
+        This project implements a Convolutional Neural Network (CNN) to enable a robotic arm to play the classic game of Rock-Paper-Scissors. Leveraging an HSV camera, the system processes hand gestures in real-time and is deployed on an edge computing platform for optimal performance. The recognized gestures control the robotic arm, making this system efficient and responsive for human-robot interaction. 
+              </p>
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr bgcolor="#e6f7ff">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/exoarm.png" width="180" height="140" style="position: absolute;">
+        <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://www.instructables.com/Exoskeleton-Arm/">ExoArm</a>
+      </papertitle>
+      <br>
+      <strong>Naval Kishore Mehta</strong>, Surya Pratap Deopa, Abhishek Saxena, Amit Jain <br>
+              <a href="https://www.analog.com/en/lp/002/india-anveshan.html">Anveshan Fellowship, 2014</a>
+
+      <p></p>
+      <p>
+        Exoskeleton Arm  is an active upper limb assistive device that is actuated by a High Torque servo Motor(τ =  17.65197 Nm) and powered by two 11.2 V Li-Po battery connected in series .The whole system is commanded by bio-electric signals which pass by the brain to contract the target muscles. This can be used as physiotherapy device in areas of rehabilitation .Another use of this Exoskeleton Arm is in areas where heavy lifting is required. These areas may include heavy lifting in warehouses, factories and even in rescue operations.      </p>
+    </td>
+  </tr>
+</table>
 
 
 <!-- Services -->
