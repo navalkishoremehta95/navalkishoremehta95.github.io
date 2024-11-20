@@ -102,6 +102,62 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 <i>IEEE TPAMI, TNNLS, TFS, TKDE, TMI, TNSRE, JBHI, AAMAS, AAAI</i> ... </li> </p>
 </ul> -->
 <!-- Project Section -->
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: Video -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="video-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <!-- Static Image as Fallback -->
+        <img id="static_image" src="./Files/df_sampler.png" width="160" height="140" style="position: absolute;">
+        
+        <!-- MP4 Video -->
+        <!-- <video id="mp4_video" width="180" height="140" style="display: block;" autoplay muted loop>
+          <source src="./Files/iar_net.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div> -->
+      <!-- <script type="text/javascript"> -->
+        // window.onload = function () {
+        //   var video = document.getElementById('mp4_video');
+        //   var staticImage = document.getElementById('static_image');
+          
+        //   // Check if the video loads successfully
+        //   video.onerror = function () {
+        //     console.log("Video failed to load.");
+        //     video.style.display = 'none';
+        //     staticImage.style.display = 'block';
+        //   };
+
+        //   video.onloadstart = function () {
+        //     console.log("Video loaded successfully.");
+        //     video.style.display = 'block';
+        //     staticImage.style.display = 'none';
+        //   };
+        // };
+      <!-- </script> -->
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://ieeexplore.ieee.org/document/10711155">DF Sampler: A Self-Supervised Method for Adaptive Keyframe Sampling</a>
+      </papertitle>
+      <br>
+      <strong>Naval Kishore Mehta</strong>, Shyam Sunder Prasad, Sumeet Saurav, Sanjay Singh<br>
+      <em> International Conference on Emerging Technologies and Factory Automation (ETFA), 2024</em><br>  
+      <a href="https://ieeexplore.ieee.org/document/10711155">Paper</a> | 
+      <!-- <a href="https://github.com/navalkishoremehta95/IAR-NET">Code</a> -->
+      <p></p>
+      <p>
+        We introduce Dynamic Frame Sampler (DF Sampler), a novel adaptive keyframe sampling method for variable-duration action sequences in complex industrial settings. Using a self-supervised approach, DF Sampler selects motion-relevant keyframes to enhance HAR system efficiency. Its effectiveness is validated on the HRI30 dataset.
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+
 <table>
   <tr bgcolor="#f5f5dc">
     <!-- Right: Video -->
@@ -231,6 +287,54 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 </table>
 
 
+
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/hsp2fdns.png" width="160" height="140" style="position: absolute;">
+        <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3627631.3627650">Hybrid SNN-based Privacy-Preserving Fall Detection using Neuromorphic Sensors
+</a>
+      </papertitle>
+      <br>
+      Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Himanshu Kumar, Abeer Banerjee, Sumeet Saurav, Sanjay Singh<br>
+      <em> Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), 2023</em><br>  
+      <a href="https://dl.acm.org/doi/abs/10.1145/3627631.3627650">Paper</a>
+      <p></p>
+      <p>
+        This paper presents a fall detection framework utilizing Spiking Neural Networks (SNN) to replicate neural activity, achieving an accuracy of 94.59%. Furthermore, it explores a hybrid approach combining 3D-CNN & SNN (NeuCube), which significantly improves detection accuracy to 97.84% on the recorded dataset.    </p>
+    </td>
+  </tr>
+</table>
+
+
+
 <table>
   <tr bgcolor="#e6f7ff">
     <!-- Right: GIF/Image -->
@@ -267,7 +371,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
       <br>
       <strong>Naval Kishore Mehta</strong>, Shyam Sunder Prasad, Sumeet Saurav, Ravi Saini, Sanjay Singh<br>
       <em> Applied Intelligence Journal, Springer,  2022</em><br>  
-      <a href="https://link.springer.com/article/10.1007/s10489-022-03200-4">Paper</a> (Best Paper Award)
+      <a href="https://link.springer.com/article/10.1007/s10489-022-03200-4">Paper</a>  
       <p></p>
       <p>
         This paper presents DenseAttNet, a self-attention DenseNet model achieving state-of-the-art performance in evaluating student engagement in virtual and traditional learning settings. On the DAiSEE dataset, it records engagement and boredom classification accuracies of 63.59% and 54.27%, respectively, and excels in multi-label tasks with accuracies up to 95.85%. Regression experiments further validate its effectiveness, achieving an MSE of 0.0347 on DAiSEE and 0.0877 on EmotiW-EP, establishing DenseAttNet as a robust solution for analyzing emotional states in e-learning.
@@ -275,6 +379,99 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
     </td>
   </tr>
 </table>
+
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/ihci22.png" width="160" height="140" style="position: absolute;">
+        <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-27199-1_44">Gaze Detection Using Encoded Retinomorphic Events
+</a>
+      </papertitle>
+      <br>
+      Abeer Banerjee, Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Himanshu Kumar, Sumeet Saurav, Sanjay Singh<br>
+      <em>  International Conference on Intelligent Human Computer Interaction (IHCI), 2022</em><br>  
+      <a href="https://link.springer.com/chapter/10.1007/978-3-031-27199-1_44">Paper</a>
+      <p></p>
+      <p>
+        We propose a novel six-channel event encoding technique to process saccadic motion event logs into structured images and design a Convolutional Neural Network for gaze prediction based on these encoded events. The approach is validated using metrics such as average distance, average angle, and pixel radius accuracy, demonstrating its reliability.   </p>
+    </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: GIF/Image -->
+    <td style="padding:10px;width:25%;vertical-align:middle">
+      <div class="image-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <img id="google" src="./Files/indicon22.png" width="160" height="140" style="position: absolute;">
+        <!-- <img id="gif_image" src="./Files/animated_image.gif" width="160" height="140" style="opacity: 0; position: relative;"> -->
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var gif = document.getElementById('gif_image');
+          var staticImage = document.getElementById('google');
+          
+          // Check if the GIF loads successfully
+          gif.onerror = function () {
+            gif.style.display = 'none';
+            staticImage.style.display = 'block';
+          };
+
+          gif.onload = function () {
+            gif.style.opacity = '1';
+            staticImage.style.display = 'none';
+          };
+        };
+      </script>
+    </td>
+
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10039894">Real-Time Privacy-Preserving Fall Detection using Dynamic Vision Sensors
+</a>
+      </papertitle>
+      <br>
+      Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Himanshu Kumar, Abeer Banerjee, Sumeet Saurav, Sanjay Singh<br>
+      <em>  IEEE India Conference (INDICON), 2022</em><br>  
+      <a href="https://ieeexplore.ieee.org/abstract/document/10039894">Paper</a>
+      <p></p>
+      <p>
+        This paper addresses the challenge of privacy-preserving fall detection, a subset of human action recognition, using the Dynamic Vision Sensor (DVS). We demonstrate real-time fall detection with a 3D-Convolutional Neural Network (3D-CNN), achieving an average sensitivity of 99.34% and specificity of 100%. With its small memory footprint, low parameter count, and efficient operation, the model delivers real-time performance on edge devices, making it practical for deployment.    </p>
+    </td>
+  </tr>
+</table>
+
+
 
 <table>
   <tr bgcolor="#f5f5dc">
@@ -310,7 +507,7 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 </a>
       </papertitle>
       <br>
-      Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Abeer Banerjee, Sumeet Saurav, Sanjay Singh<br>
+      Shyam Sunder Prasad, <strong>Naval Kishore Mehta</strong>, Ankit Shukla, Pranav Mahajan, Arshdeep Singh, Sumeet Saurav, Sanjay Singh<br>
       <em> International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA), 2022</em><br>  
       <a href="https://link.springer.com/chapter/10.1007/978-981-19-7513-4_10">Paper</a> (Best Paper Award)
       <p></p>
