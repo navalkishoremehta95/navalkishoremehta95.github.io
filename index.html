@@ -285,6 +285,52 @@ Before joining CSIR-CEERI, I worked as a Research Intern at <a href="https://www
 <table>
   <tr bgcolor="#f5f5dc">
     <!-- Right: Video -->
+    <td style="padding:10px; width:25%; vertical-align:middle;">
+      <div class="video-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+        <!-- WebM Video -->
+        <video id="video_demo" width="180" height="140" autoplay muted loop controls>
+          <source src="./Files/Vton.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <script type="text/javascript">
+        window.onload = function () {
+          var video = document.getElementById('video_demo');
+
+          // Log video load status
+          video.onerror = function () {
+            console.log("Video failed to load.");
+          };
+
+          video.onloadstart = function () {
+            console.log("Video loading...");
+          };
+        };
+      </script>
+    </td>
+    <!-- Left: Project Description -->
+    <td style="padding:20px;width:75%;vertical-align:middle; text-align: justify;">
+      <papertitle>
+
+        Virtual-Try-On
+      </papertitle>
+      <br>  
+      <strong>Naval Kishore Mehta</strong>,  Shyam S Prasad</a> <br>
+      <!-- <em> <a href="https://ssp.jst.go.jp/en/">Sakura Science Exchange Program Fellow, 2019</a> </em><br> -->
+      <!-- <em> <a href="http://www.ildp.hiroshima-u.ac.jp/">International Linkage Degree Program Fellowship (Hiroshima University, Japan), 2019</a> </em><br> -->
+      <p></p>
+      <p>
+      	This project developed a virtual try-on system, leveraging diffusion models and appearance flow techniques to address high-resolution image challenges such as misalignment and occlusions. By integrating a precise warping network, the system significantly improved the realism of digital apparel fittings.              </p>
+    </td>
+  </tr>
+</table>
+
+
+
+
+<table>
+  <tr bgcolor="#f5f5dc">
+    <!-- Right: Video -->
     <td style="padding:10px;width:25%;vertical-align:middle">
       <div class="video-container" style="display: flex; align-items: center; justify-content: center; height: 100%;">
         <!-- Static Image as Fallback -->
