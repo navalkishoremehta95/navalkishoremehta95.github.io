@@ -1,0 +1,7 @@
+# Local extraction / temp assets (do not publish)
+Files/from_slides/
+Files/pdf_slide_*.png
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
